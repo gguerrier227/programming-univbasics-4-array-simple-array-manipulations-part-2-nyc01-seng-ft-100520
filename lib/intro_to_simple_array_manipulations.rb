@@ -25,3 +25,11 @@ def using_delete
   instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
   instructors.delete("Steven")
 end
+
+describe "using_delete_at" do 
+  it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
+    famous_robots = ["Johnny 5", "R2D2", "Robocop"]
+    deleted_robot = famous_robots.delete.at
+    expect(deleted_robot).to eq("Robocop")
+  end
+end
