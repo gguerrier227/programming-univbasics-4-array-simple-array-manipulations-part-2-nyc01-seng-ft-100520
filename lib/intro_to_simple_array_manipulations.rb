@@ -18,6 +18,5 @@ end
 
 def using_flatten 
   instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
- flat_array = using_flatten(instruments)
-     expect(flat_array).to eq(["Saxophone", "Piano", "Trumpet", "Violin", "Drums", "Flute"])
+  instruments.flatten
 end
